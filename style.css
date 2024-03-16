@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('Gilroy-Bold.eot');
+  src: url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'), url('Gilroy-Bold.woff') format('woff'), url('Gilroy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url('Gilroy-Regular.eot');
+  src: url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'), url('Gilroy-Regular.woff') format('woff'), url('Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('Gilroy-Light.eot');
+  src: url('Gilroy-Light.eot?#iefix') format('embedded-opentype'), url('Gilroy-Light.woff') format('woff'), url('Gilroy-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy Ultra Light';
+  src: url('Gilroy-UltraLight.eot');
+  src: url('Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'), url('Gilroy-UltraLight.woff') format('woff'), url('Gilroy-UltraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy Thin';
+  src: url('Gilroy-Thin.eot');
+  src: url('Gilroy-Thin.eot?#iefix') format('embedded-opentype'), url('Gilroy-Thin.woff') format('woff'), url('Gilroy-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+body {
+  background: #211f20;
+  background: linear-gradient(0deg, #211f20 50%, #44403f 100%);
+}
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1px solid #CFCFCF;
+}
+.header__container {
+  height: 52%;
+  width: 88%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo-searct-wrapper {
+  width: 75%;
+  height: 52px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__search-contacts {
+  width: 770px;
+  height: 52px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__search-wrapper {
+  max-width: 555px;
+  height: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.header__search-wrapper_bgc-color-black {
+  background-color: #504B4A;
+}
+.header__material-symbols-outlined-loc {
+  margin-left: 14px;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+.header__material-symbols-outlined-loc_color-white {
+  color: #FFFFFF;
+}
+.header__search-form {
+  height: 21px;
+  width: 456px;
+}
+.header__search-input {
+  height: inherit;
+  width: inherit;
+  background-color: inherit;
+  border: none;
+}
+.header____search-input_fontsize18::placeholder {
+  font-size: 18px;
+  font-family: 'Gilroy Light';
+  line-height: 21px;
+  font-weight: 400;
+}
+.header__search-input_color-gray::placeholder {
+  color: #CFCFCF;
+}
+.header__material-symbols-outlined-src {
+  margin-left: 10px;
+  margin-right: 14px;
+  width: 24px;
+  height: 24px;
+}
+.header__material-symbols-outlined-src_color-white {
+  color: #FFFFFF;
+}
+.header__contacts-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 186px;
+  max-height: 39px;
+}
+.header__phone-icon-wrapper {
+  height: 32px;
+  width: 32px;
+  border-radius: 20px;
+  margin-top: 3px;
+  margin-right: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.header__contacts-number-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 39px;
+  max-width: 136px;
+}
+.header__contacts-title_fontsize12 {
+  font-size: 12px;
+  font-family: 'Gilroy Regular';
+  line-height: 20px;
+  font-weight: 400;
+}
+.header__contacts-title_color-gray {
+  color: #CFCFCF;
+}
+.header__contacts-number-link_fontsize16 {
+  font-size: 16px;
+  font-family: 'Gilroy Bold';
+  line-height: 20px;
+  font-weight: 700;
+}
+.header__contacts-number-link_color-white {
+  color: #FFFFFF;
+}
+.header__card-btn-link {
+  height: 100%;
+}
+.header__card-btn {
+  height: 100%;
+  width: 149px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.header__card-btn_bgc-color-green {
+  background: #618967;
+  background: linear-gradient(101deg, #618967 90%, #72a479 100%);
+}
+.header__card-btn-wrapper {
+  height: 38px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__incard-number-wrapper {
+  width: 49px;
+  height: 38px;
+  border-left: 0.5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__card-btn-title {
+  margin-right: 15%;
+}
+.header__card-btn-title_fontsize14 {
+  font-size: 14px;
+  font-family: 'Gilroy Bold';
+  line-height: 16.7px;
+}
+.header__card-btn-title_color-white {
+  color: #FFFFFF;
+}
+.header__incard-number {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__incard-number_bgc-color-white {
+  background-color: #FFFFFF;
+}
+.header__incard-num_color-black {
+  color: #2E373B;
+}
+.header__material-symbols-outlined_color-white {
+  color: #FFFFFF;
+}
+/* .header_bgc-dark{
+    background-color: @color-light-black;
+} */
+.logo__img {
+  width: 100px;
+  height: 25px;
+}
+.banner {
+  background: url(images/баннер\ 1.png);
+  height: 484px;
+  width: 100%;
+  background-size: cover;
+}
+.navigation {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1px solid #CFCFCF;
+}
+.navigation__navi-list {
+  width: 88%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navigation__navi-item-link {
+  display: block;
+  width: inherit;
+  height: 50%;
+  margin-top: 30px;
+}
+.navigation__navi-item-link:hover {
+  height: 58%;
+  border-bottom: 3px solid #618967;
+  font-size: 18px;
+  font-family: 'Gilroy Regular';
+  font-weight: 500;
+  line-height: 21.19px;
+  color: #FFFFFF;
+}
+.navigation__navi-item {
+  height: 100%;
+}
+.navigation__navi-item-link_fontsize18 {
+  font-size: 16px;
+  font-family: 'Gilroy Thin';
+  font-weight: 400;
+  line-height: 20.88px;
+}
+.navigation____navi-item-link_color-gray {
+  color: #CFCFCF;
+}

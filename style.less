@@ -1,0 +1,397 @@
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('Gilroy-Bold.eot');
+    src: url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Bold.woff') format('woff'),
+    url('Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+        font-family: 'Gilroy Regular';
+        src: url('Gilroy-Regular.eot');
+        src: url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Regular.woff') format('woff'),
+        url('Gilroy-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+ }
+
+ @font-face {
+            font-family: 'Gilroy Light';
+            src: url('Gilroy-Light.eot');
+            src: url('Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+            url('Gilroy-Light.woff') format('woff'),
+            url('Gilroy-Light.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gilroy Ultra Light';
+    src: url('Gilroy-UltraLight.eot');
+    src: url('Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-UltraLight.woff') format('woff'),
+    url('Gilroy-UltraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+          
+    @font-face {
+        font-family: 'Gilroy Thin';
+        src: url('Gilroy-Thin.eot');
+        src: url('Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Thin.woff') format('woff'),
+        url('Gilroy-Thin.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+@color-White: #FFFFFF;
+@color-Black: #2E373B;
+@color-Red: #F6404F;
+@color-IceCream: #FAF3E3;
+@color-Gray: #CFCFCF;
+@color-Blue: #2378FC;
+@color-Yellow: #FFC41E;
+@color-Green: #618967;
+@font-size64: 64px;
+@font-size30: 30px;
+@font-size21: 21px;
+@font-size24: 24px;
+@font-size18: 18px;
+@font-size16: 16px;
+@font-size14: 14px;
+@font-size12: 12px;
+@font-family-PlumbMedium: "Plumb Medium";
+@font-family-CirceRegular: "CirceRegular";
+@font-weight-bold: bold;
+@font-weight-normal: normal;
+@font-weight-lighter: lighter;
+
+@color-light-black:#403C3B;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+  }
+
+a{
+   text-decoration: none; 
+   color: @color-White;
+}
+
+body{
+    background: rgb(33,31,32);
+    background: linear-gradient(0deg, rgba(33,31,32,1) 50%, rgba(68,64,63,1) 100%);
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1px solid @color-Gray;
+    
+
+    &__container{
+        height: 52%;
+        width: 88%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-searct-wrapper{
+        width: 75%;
+        height: 52px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__search-contacts{
+        width: 770px;
+        height: 52px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    &__search-wrapper{
+        max-width: 555px;
+        height: inherit;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    &__search-wrapper_bgc-color-black{
+        background-color: #504B4A;
+    }
+
+    &__material-symbols-outlined-loc{
+        margin-left: 14px;
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__material-symbols-outlined-loc_color-white{
+        color: #FFFFFF;  
+    }
+    
+
+    &__search-form{
+        height: 21px;
+        width: 456px;
+        
+    }
+
+    &__search-input{
+        height: inherit;
+        width: inherit;
+        background-color: inherit;  
+        border: none;
+    }
+
+    &____search-input_fontsize18::placeholder{
+        font-size: @font-size18;
+        font-family: 'Gilroy Light';
+        line-height: 21px;
+        font-weight: 400; 
+    }
+
+    &__search-input_color-gray::placeholder{
+        color: @color-Gray;
+    }
+
+    &__material-symbols-outlined-src{
+        margin-left: 10px;
+        margin-right: 14px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__material-symbols-outlined-src_color-white{
+        color: #FFFFFF;
+    }
+
+    &__contacts-wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        max-width: 186px;
+        max-height: 39px;
+    }
+
+    &__phone-icon-wrapper{
+        height: 32px;
+        width: 32px;
+        border-radius: 20px;
+        margin-top: 3px;
+        margin-right: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+  
+    &__contacts-number-wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 39px;
+        max-width: 136px;
+    
+    }
+
+    &__contacts-title_fontsize12{
+        font-size: @font-size12;
+        font-family: 'Gilroy Regular';
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    &__contacts-title_color-gray{
+        color: @color-Gray;
+    }
+
+    &__contacts-number-link_fontsize16{
+        font-size: @font-size16;
+        font-family: 'Gilroy Bold';
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    &__contacts-number-link_color-white{
+        color: @color-White;
+    }
+
+    &__card-btn-link{
+        height: 100%; 
+    }
+    &__card-btn{
+        height: 100%;
+        width: 149px;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+   &__card-btn_bgc-color-green{
+        background: rgb(97,137,103);
+        background: linear-gradient(101deg, rgba(97,137,103,1) 90%, rgba(114,164,121,1) 100%);
+    }
+
+    &__card-btn-wrapper{
+        height: 38px;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    &__incard-number-wrapper{
+        width: 49px;
+        height: 38px;
+        border-left: 0.5px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__card-btn-title{
+        margin-right: 15%;
+    }
+
+    &__card-btn-title_fontsize14{
+        font-size: @font-size14;
+        font-family: 'Gilroy Bold';
+        line-height: 16.7px;
+       }
+
+    &__card-btn-title_color-white{
+        color: @color-White;
+    }
+    
+    &__incard-number{
+        width: 25px;
+        height: 25px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__incard-number_bgc-color-white{
+        background-color: #FFFFFF;
+    }
+
+    &__incard-num_color-black{
+        color: @color-Black;
+    }
+
+    &__material-symbols-outlined_color-white{
+        color: #FFFFFF;  
+    }
+}
+
+/* .header_bgc-dark{
+    background-color: @color-light-black;
+} */
+
+.logo__img{
+    width: 100px;
+    height: 25px;
+}
+
+.banner{
+    background: url(images/баннер\ 1.png);
+    height: 484px;
+    width: 100%;
+    background-size: cover;
+}
+
+
+.navigation{
+    
+    width: 100%;
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1px solid @color-Gray;
+    
+    
+
+    &__navi-list{
+        width: 88%;
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }   
+    
+    &__navi-item-link{
+        display: block; 
+        width: inherit;
+        height: 50%;
+        margin-top: 30px;
+        
+        
+    }
+
+    &__navi-item-link:hover{
+        height: 58%;
+        border-bottom: 3px solid @color-Green;
+        font-size: @font-size18;
+        font-family: 'Gilroy Regular';
+        font-weight: 500;
+        line-height: 21.19px;
+        color: @color-White;
+    }
+
+    &__navi-item{
+        height: 100%;
+
+    }
+    
+    &__navi-item-link_fontsize18{
+        font-size: @font-size16;
+        font-family: 'Gilroy Thin';
+        font-weight: 400;
+        line-height: 20.88px;
+    }
+
+    &____navi-item-link_color-gray{
+        color: @color-Gray;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
