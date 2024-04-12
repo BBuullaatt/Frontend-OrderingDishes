@@ -1,52 +1,52 @@
 @font-face {
     font-family: 'Gilroy Bold';
-    src: url('Gilroy-Bold.eot');
-    src: url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-    url('Gilroy-Bold.woff') format('woff'),
-    url('Gilroy-Bold.ttf') format('truetype');
+    src: url('fonts/Gilroy-Bold.eot');
+    src: url('fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-Bold.woff') format('woff'),
+    url('fonts/Gilroy-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
 
 @font-face {
         font-family: 'Gilroy Regular';
-        src: url('Gilroy-Regular.eot');
-        src: url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Regular.woff') format('woff'),
-        url('Gilroy-Regular.ttf') format('truetype');
+        src: url('fonts/Gilroy-Regular.eot');
+        src: url('fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gilroy-Regular.woff') format('woff'),
+        url('fonts/Gilroy-Regular.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
  }
 
  @font-face {
             font-family: 'Gilroy Light';
-            src: url('Gilroy-Light.eot');
-            src: url('Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-            url('Gilroy-Light.woff') format('woff'),
-            url('Gilroy-Light.ttf') format('truetype');
+            src: url('fonts/Gilroy-Light.eot');
+            src: url('fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+            url('fonts/Gilroy-Light.woff') format('woff'),
+            url('fonts/Gilroy-Light.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
   }
 
   @font-face {
     font-family: 'Gilroy Ultra Light';
-    src: url('Gilroy-UltraLight.eot');
-    src: url('Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
-    url('Gilroy-UltraLight.woff') format('woff'),
-    url('Gilroy-UltraLight.ttf') format('truetype');
+    src: url('fonts/Gilroy-UltraLight.eot');
+    src: url('fonts/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-UltraLight.woff') format('woff'),
+    url('fonts/Gilroy-UltraLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
           
-    @font-face {
-        font-family: 'Gilroy Thin';
-        src: url('Gilroy-Thin.eot');
-        src: url('Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Thin.woff') format('woff'),
-        url('Gilroy-Thin.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        }
+  @font-face {
+    font-family: 'Gilroy Thin';
+    src: url('fonts/Gilroy-Thin.eot');
+    src: url('fonts/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-Thin.woff') format('woff'),
+    url('fonts/Gilroy-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 
 @color-White: #FFFFFF;
 @color-Black: #2E373B;
@@ -57,9 +57,12 @@
 @color-Yellow: #FFC41E;
 @color-Green: #618967;
 @font-size64: 64px;
+@font-size32: 32px;
 @font-size30: 30px;
 @font-size21: 21px;
 @font-size24: 24px;
+@font-size22: 22px;
+@font-size20: 20px;
 @font-size18: 18px;
 @font-size16: 16px;
 @font-size14: 14px;
@@ -72,9 +75,22 @@
 
 @color-light-black:#403C3B;
 
-*{
+* {
+    /*Reset's every elements apperance*/
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    color: #FFFFFF;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42rem;
+    list-style: none outside none;
     margin: 0;
     padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
 }
 
 ul {
@@ -91,6 +107,7 @@ body{
     background: linear-gradient(0deg, rgba(33,31,32,1) 50%, rgba(68,64,63,1) 100%);
 }
 
+  /* Раздел header */
 .header{
     height: 100px;
     display: flex;
@@ -327,17 +344,14 @@ body{
     background-size: cover;
 }
 
-
+/* Раздел navigation */
 .navigation{
     
     width: 100%;
     height: 78px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-bottom: 0.1px solid @color-Gray;
-    
-    
+    align-items: center;    
 
     &__navi-list{
         width: 88%;
@@ -374,15 +388,205 @@ body{
     
     &__navi-item-link_fontsize18{
         font-size: @font-size16;
-        font-family: 'Gilroy Thin';
+        font-family: 'Gilroy Light';
         font-weight: 400;
         line-height: 20.88px;
     }
 
-    &____navi-item-link_color-gray{
+    &__navi-item-link_color-gray{
         color: @color-Gray;
     }
 }
+
+.navigation_brd-gray{
+border-bottom: 0.1px solid @color-Gray;
+}
+
+/* Раздел crd-product */
+.crd-product{
+    width: 100%;
+    max-height: 575px;
+    padding: 50px 0;
+
+    &__title{
+        max-height: 33px;
+        margin: 0 0 50px  95px;
+        padding-left: 19px;
+        border-left: 4px solid;
+    }
+
+    &__title_fontsize32{
+        font-size: @font-size32;
+        font-family: 'Gilroy Bold';
+        line-height: 38.69px;
+        font-weight: 700;
+    }
+
+    &__title_brdrclr-green{
+        border-color: @color-Green;
+    }
+
+    &__title_color-white{
+        color: @color-White;
+    }
+
+    &__list{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        
+
+    }
+
+   
+    &__list-item_bgc-color{
+        background: rgb(73,69,68);
+    background: linear-gradient(90deg, rgba(73,69,68,1) 0%, rgba(80,75,74,1) 100%, rgba(0,212,255,1) 100%);
+    }
+
+    &__list-item-name-weigth-container{
+        margin: 15px 16px 5px 20px;
+    }
+
+    &__list-item-name_fontsize22{
+        font-size: @font-size22;
+        font-family: 'Gilroy Bold';
+        line-height: 26.6px;
+        font-weight: 700;
+    }
+
+    &__list-item-name_color-white{
+        color: @color-White;
+    }
+
+    &__list-item-weigth_fontsize12{
+        font-size: @font-size12;
+        font-family: 'Gilroy Light';
+        line-height: 13.92px;
+        font-weight: 400;
+    }
+
+    &__list-item-weigth_color-white{
+        color: @color-White;
+    }
+
+    &__list-item-description{   
+        margin: 0 0 15px 20px; 
+    }
+    
+    &__list-item-description_fontsize17{
+        font-size: @font-size12;
+        font-family: 'Gilroy Thin';
+        line-height: 17px;
+        font-weight: 400;
+    }
+
+    &__list-item-description_color-white{
+        color: @color-White;
+    }
+
+    &__list-item-price-btn-container{
+        margin-left: 20px;
+    }
+
+    &__list-item-price_fontsize20{
+        font-size: @font-size20;
+        font-family: 'Gilroy Bold';
+        line-height: 23.86px;
+        font-weight: 600;
+    }
+
+    &__list-item-price_color-white{
+        color: @color-White;
+    }
+
+    &__list-item-inbsct-btn_bgc-green{
+        background-color: @color-Green;
+    }
+
+    &__list-item-inbsct-btn:hover{
+        border: 2px solid @color-Black;  
+    }
+
+    &__list-item-inbsct-btn-wrapper{
+        margin: 10px 16px 10px 19px;
+    }
+
+    &__list-item-item-inbsct-title{
+        margin-right: 12px;
+    }
+
+    &__list-item-inbsct-title_fontsize14{
+        font-size: @font-size14;
+        font-family: 'Gilroy Bold';
+        line-height: 16.7px;
+        font-weight: 600; 
+    }
+
+    &__list-item-inbsct-title_color-white{
+        color: @color-White;
+    }
+
+    &__material-symbols-outlined{
+        height: 24px;
+    }
+
+    &__material-symbols-outlined_color-white{
+        color: @color-White;
+    }
+
+}
+
+.list-item{
+    width: 329px;
+    height: 385px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    &__img{
+        width: 100;
+        height: 227px; 
+    }
+
+    &__name-weigth-container{
+        width: 89%;
+        max-height: 27px;
+        display: flex;
+        margin: 15px 16px 5px 20px;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__description{
+        width: 89%;
+    }
+    &__price-btn-container{
+        width: 89%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__inbsct-btn{
+        border-radius: 10px;  
+    }
+
+    &__inbsct-btn-wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+}
+
+.crd-product_brd-gray{
+    border-bottom: 0.1px solid @color-Gray;
+    }
+
+
+
 
 
 
